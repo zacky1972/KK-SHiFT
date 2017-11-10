@@ -26,6 +26,12 @@ page '/*.txt', layout: false
 # Helpers
 ###
 
+helpers do
+  def hostUrl link
+    'https://zacky1972.github.io/KK-Shift' + link
+  end
+end
+
 # Reload the browser automatically whenever files change
 # configure :development do
 #   activate :livereload
@@ -45,4 +51,18 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+  # リポジトリ名を host に設定しておく
+  # こうすることで stylesheet_link_tag などで展開されるパスが
+  # https://zacky1972.github.io/KK-Shift/stylesheets/*.css
+  # のようになる
+  activate :asset_hash
+  activate :asset_host, :host => 'https://zacky1972.github.io/KK-Shift'
+end
+
+# デプロイの設定
+# 今回は gh-pages を使用するので branch に 'gh-pages' を設定する
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
+  deploy.branch = 'gh-pages'
 end
