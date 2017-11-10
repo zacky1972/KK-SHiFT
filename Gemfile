@@ -15,3 +15,6 @@ gem 'middleman-sprockets', '>= 4.0.0'
 gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
+
+gem 'redcarpet'
+gem 'nokogiri'

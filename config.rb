@@ -4,6 +4,10 @@ require 'slim'
 # Page options, layouts, aliases and proxies
 ###
 
+## GitHub Flavored Markdown
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
+set :markdown_engine, :redcarpet
+
 # Per-page layout changes:
 #
 # With no layout
