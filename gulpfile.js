@@ -23,12 +23,13 @@ var b = browserify({
 });
 
 gulp.task('default', ['build']);
-gulp.task('build', ['sass', 'bundle']);
+gulp.task('build', ['sass', 'bundle', 'bootstrap']);
 gulp.task('watch', function(){
   //
 });
 gulp.task('bundle', jsBundle);
 gulp.task('sass', sassPreCompile);
+gulp.task('bootstrap', copyBootstrapCSS);
 
 function jsBundle() {
 	return b.bundle()
@@ -36,10 +37,15 @@ function jsBundle() {
 		.pipe(gulp.dest(jsConf.destPath));
 }
 
-function sassPreCompile(){
+function sassPreCompile() {
   gulp.src(cssConf.srcPath)
     .pipe(sass({
     	includePaths: cssConf.destFileName
     }))
     .pipe(gulp.dest(cssConf.destPath));
+}
+
+function copyBootstrapCSS() {
+	gulp.src('./node_modules/bootstrap/dist/css/*')
+		.pipe(gulp.dest(cssConf.destPath));
 }
