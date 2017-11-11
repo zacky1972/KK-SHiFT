@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import "normalize";
-@import "./node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
 
 $base-color: #FFFFFF;
 $main-color: #4BBDAB;
@@ -26,6 +26,10 @@ body {
 .navbar-brand {
 	a {
 		color: $accent-color;
+		text-decoration: none;
+	}
+	h1 {
+		margin: 0 30px;
 	}
 }
 
@@ -50,12 +54,9 @@ div#abstract {
 
 #products h1 {
 	border-top: solid 30px $main-color;
+	margin: 0;
 	padding: 30px 0;
 	text-align: center;
-}
-
-div#products {
-	margin: 50px 0;
 }
 
 span.underline {
