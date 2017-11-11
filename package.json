@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "for KK-Shift",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
   "devDependencies": {
     "browserify": "^14.5.0",
-    "browserify-shim": "^3.8.14",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "node-neat": "^2.0.0-beta.0",
@@ -14,14 +15,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
-  },
-  "browserify-shim": {
-    "jquery": "$"
   },
   "repository": {
     "type": "git",

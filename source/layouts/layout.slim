@@ -10,7 +10,8 @@ html
     link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
 
     == stylesheet_link_tag :site
-    == javascript_include_tag  "bundle"
 
   body class="#{page_classes}"
+    == javascript_include_tag  "bundle"
+
     == yield
