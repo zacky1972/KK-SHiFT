@@ -4,6 +4,24 @@ require 'slim'
 # Page options, layouts, aliases and proxies
 ###
 
+ignore 'REAMDME.md'
+
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+set :layouts_dir, 'layouts'
+
+activate :external_pipeline,
+  name: :gulp,
+  command: build? ? './node_modules/gulp/bin/gulp.js' : './node_modules/gulp/bin/gulp.js watch',
+  source: "source"
+
+configure :build do
+  ignore 'stylesheets/*'
+  ignore 'javascripts/*'
+end
+
+
 ## GitHub Flavored Markdown
 set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
 set :markdown_engine, :redcarpet
