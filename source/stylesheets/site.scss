@@ -1,3 +1,80 @@
 @charset "utf-8";
 @import "normalize";
 
+$base-color: #FFFFFF;
+$main-color: #4BBDAB;
+$accent-color: #FADF4B;
+
+img {
+	width: 100%;
+}
+
+body {
+	background-color: $base-color;
+}
+
+.navbar-light {
+	background-color: $main-color;
+	border-color: $main-color;
+}
+
+.navbar {
+	max-width: 1110px;
+}
+
+.navbar-brand {
+	a {
+		color: $accent-color;
+	}
+}
+
+#cover-img {
+	background-color: $main-color;
+	border-color: $main-color;
+	padding-bottom: 40px;
+	text-align: center;
+
+	img {
+		max-width: 1024px;
+	}
+}
+
+div#abstract {
+	margin: 40px 0;
+}
+
+#abstract h1 {
+	text-align: center;
+}
+
+#products h1 {
+	border-top: solid 30px $main-color;
+	padding: 30px 0;
+	text-align: center;
+}
+
+div#products {
+	margin: 50px 0;
+}
+
+span.underline {
+	border-bottom: solid 3px $main-color;
+}
+
+.icon {
+	text-align: center;
+	img {
+		max-width: 128px;
+	}
+}
+
+div#contact {
+	border-top: 30px solid $main-color;
+	margin: 30px 0;
+	padding-top: 30px;
+}
+
+.query {
+	text-align: center;
+}
+
