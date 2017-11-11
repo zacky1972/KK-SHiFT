@@ -13,12 +13,13 @@ set :layouts_dir, 'layouts'
 
 activate :external_pipeline,
   name: :gulp,
-  command: build? ? './node_modules/gulp/bin/gulp.js' : './node_modules/gulp/bin/gulp.js watch',
-  source: "source"
+  command: build? ? './node_modules/gulp/bin/gulp.js build' : './node_modules/gulp/bin/gulp.js watch',
+  source: ".tmp/dist",
+  latency: 0.25
 
 configure :build do
-  ignore 'stylesheets/*'
-  ignore 'javascripts/*'
+  ignore /stylesheets\/.*\.scss/
+  ignore /javascripts\/(?!bundle).*\.js/
 end
 
 

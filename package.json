@@ -3,17 +3,24 @@
   "version": "1.0.0",
   "description": "for KK-Shift",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "browserify": "^14.5.0",
     "browserify-shim": "^3.8.14",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserify": {
-    "transform": [ "browserify-shim" ]
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "$"
   },
   "repository": {
     "type": "git",
