@@ -4,7 +4,7 @@ var browserify = require('browserify');
 
 var paths = {
 	srcPath: 'source/javascripts/all.js',
-	destFileName: 'bundle.js',
+	destFileName: 'javascripts/bundle.js',
 	destPath: '.tmp/dist'
 }
 
