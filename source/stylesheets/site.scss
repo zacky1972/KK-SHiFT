@@ -33,6 +33,12 @@ body {
 	}
 }
 
+@include media-breakpoint-down(sm) {
+	.navbar-brand h1 {
+		margin: 0;
+	}
+}
+
 #cover-img {
 	background-color: $main-color;
 	border-color: $main-color;
