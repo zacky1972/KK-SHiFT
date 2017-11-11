@@ -46,6 +46,16 @@ function sassPreCompile() {
 }
 
 function copyBootstrapCSS() {
-	gulp.src('./node_modules/bootstrap/dist/css/*')
-		.pipe(gulp.dest(cssConf.destPath));
+	gulp.src('node_modules/bootstrap/dist/css/bootstrap-grid.min.css')
+		.pipe(gulp.dest('./build/stylesheets'));
+	gulp.src('node_modules/bootstrap/dist/css/bootstrap-grid.min.css.map')
+		.pipe(gulp.dest('./build/stylesheets'));
+	gulp.src('node_modules/bootstrap/dist/css/bootstrap-reboot.min.css')
+		.pipe(gulp.dest('./build/stylesheets'));
+	gulp.src('node_modules/bootstrap/dist/css/bootstrap-reboot.min.css.map')
+		.pipe(gulp.dest('./build/stylesheets'));
+	gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.css')
+		.pipe(gulp.dest('./build/stylesheets'));
+	gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.css.map')
+		.pipe(gulp.dest('./build/stylesheets'));
 }
