@@ -76,6 +76,19 @@ span.underline {
 	}
 }
 
+.app-intro {
+	border: 1px solid $main-color;
+	margin: 30px;
+	padding: 20px;
+}
+
+.app-header {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
 div#contact {
 	border-top: 30px solid $main-color;
 	margin: 30px 0;
