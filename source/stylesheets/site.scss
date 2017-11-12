@@ -112,6 +112,13 @@ div#contact {
 	}
 }
 
+@include media-breakpoint-down(sm) {
+	ul {
+		margin: 0 0 0 1em;
+		padding: 0;
+	}
+}
+
 
 footnote {
 	#footnote {
