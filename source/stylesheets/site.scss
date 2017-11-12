@@ -54,15 +54,17 @@ div#abstract {
 	margin: 40px 0;
 }
 
-#abstract h1 {
+#abstract h1, #products h1, #request h1 {
 	text-align: center;
 }
 
-#products h1 {
+#products h1, .container #request {
 	border-top: solid 30px $main-color;
 	margin: 0;
+}
+
+#product h1 {
 	padding: 30px 0;
-	text-align: center;
 }
 
 span.underline {
@@ -91,9 +93,7 @@ span.underline {
 }
 
 div#contact {
-	border-top: 30px solid $main-color;
-	margin: 30px 0;
-	padding-top: 30px;
+	margin-bottom: 30px;
 }
 
 .query {
