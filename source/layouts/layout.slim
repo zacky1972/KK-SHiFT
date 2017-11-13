@@ -12,6 +12,6 @@ html
     == stylesheet_link_tag :site
 
   body class="#{page_classes}"
-    == javascript_include_tag  "bundle"
+    == javascript_include_tag  "bundle", async: true
 
     == yield
