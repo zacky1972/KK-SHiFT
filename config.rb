@@ -22,6 +22,10 @@ configure :build do
   ignore /javascripts\/(?!bundle).*\.js/
 end
 
+activate :imageoptim do |options|
+  options.allow_lossy = true
+  options.jpegoptim = {strip: ['all'], max_quality: 80}
+end
 
 ## GitHub Flavored Markdown
 set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
