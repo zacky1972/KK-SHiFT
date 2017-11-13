@@ -54,17 +54,18 @@ div#abstract {
 	margin: 40px 0;
 }
 
-#abstract h1, #products h1, #request h1 {
+#abstract h1, #projects h1, #request h1 {
 	text-align: center;
 }
 
-#products h1, .container #request, .container #grant {
+#projects h1, .container #request, .container #grant {
 	border-top: solid 30px $main-color;
 	margin: 0;
 }
 
-#product h1, .container #grant {
-	padding: 30px 0;
+#projects h1, .container #grant {
+	padding-top: 30px;
+	margin-bottom: 30px;
 }
 
 span.underline {
