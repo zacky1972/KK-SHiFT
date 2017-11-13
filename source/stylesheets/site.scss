@@ -58,12 +58,12 @@ div#abstract {
 	text-align: center;
 }
 
-#products h1, .container #request {
+#products h1, .container #request, .container #grant {
 	border-top: solid 30px $main-color;
 	margin: 0;
 }
 
-#product h1 {
+#product h1, .container #grant {
 	padding: 30px 0;
 }
 
