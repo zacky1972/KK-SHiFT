@@ -70,10 +70,11 @@ end
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
   # リポジトリ名を host に設定しておく
   # こうすることで stylesheet_link_tag などで展開されるパスが
   # https://zacky1972.github.io/KK-Shift/stylesheets/*.css
