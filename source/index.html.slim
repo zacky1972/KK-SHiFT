@@ -47,7 +47,7 @@ header#header
 				a.scroll href="#Gakufubako"
 					img src="images/Gakufubako-icon.jpg"
 
-		.app-intro
+		#petrian.app-intro
 			a name="petrian"
 			.row.app-header
 				.icon.col-12.col-md-3
@@ -71,7 +71,7 @@ header#header
 								li ヤング賞
 				.col-md-1.d-none.d-md-block
 
-		.app-intro
+		#kamokamo.app-intro
 			a name="kamokamo"
 			.row.app-header
 				.icon.col-12.col-md-3
@@ -99,7 +99,7 @@ header#header
 								li ウェブとモバイルアプリによる中国人の北九州市へのインバウンド観光需要の調査・発掘
 				.col-md-1.d-none.d-md-block
 
-		.app-intro
+		#agri-IoT.app-intro
 			a name="agri-IoT"
 			.row.app-header
 				.icon.col-12.col-md-3
@@ -112,7 +112,7 @@ header#header
 					p 私たちが開発した農業IoTは，100枚以上の田んぼを所有する農家のために，とくに土壌の状態を監視・通知する機能を農家にとって使いやすい形で安価に提供することをとことん追求しました。
 				.col-md-1.d-none.d-md-block
 
-		.app-intro
+		#KanmonGG.app-intro
 			a name="KanmonGG"
 			.row.app-header
 				.icon.col-12.col-md-3
@@ -125,7 +125,7 @@ header#header
 					p 関門G&Gは，関門地域の商店・観光地を位置情報を使ったゲームで結びつけ，回遊性の向上や売上の向上を目指すほか，観光客から観光データを収集し，この情報を提供することで商売や観光促進に使っていただくことを狙っています。
 				.col-md-1.d-none.d-md-block
 
-		.app-intro
+		#Gakufubako.app-intro
 			a name="Gakufubako"
 			.row.app-header
 				.icon.col-12.col-md-3
@@ -178,3 +178,14 @@ footnote
 	.container
 		#footnote
 			.copyright ©️ 2017 KK-Shift
+
+javascript:
+  | $(function(){
+    | $.scrollDepth({
+      | elements: ['#header', '#cover-img', '#abstract', '#projects', '#petrian', '#kamokamo', '#agri-IoT', '#KanmonGG', '#Gakufubako', '#request', '#grant', '#footnote'],
+      | pixelDepth: false,
+      | percentage: false,
+    | });
+  | });
+
+

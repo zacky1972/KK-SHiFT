@@ -30,3 +30,4 @@ require('bootstrap');
 $(document).ready( function() {
 	$(".scroll").scrollAnchors();
 });
+
