@@ -30,3 +30,15 @@ require('bootstrap');
 $(document).ready( function() {
 	$(".scroll").scrollAnchors();
 });
+
+
+/*
+ * scroll-depth settings
+ */
+$(function(){
+  $.scrollDepth({
+    elements: ['#header', '#cover-img', '#abstract', '#projects', '#petrian', '#kamokamo', '#agri-IoT', '#KanmonGG', '#Gakufubako', '#request', '#grant', '#footnote'],
+    pixelDepth: false,
+    percentage: false,
+  });
+});
