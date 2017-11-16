@@ -3,6 +3,7 @@
 var $ = require('jquery');
 require('popper.js');
 require('bootstrap');
+require('scroll-depth');
 
 /*
  * スムーススクロール
