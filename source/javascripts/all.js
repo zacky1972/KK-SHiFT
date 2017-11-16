@@ -38,7 +38,20 @@ $(document).ready( function() {
  */
 $(function(){
   $.scrollDepth({
-    elements: ['#header', '#cover-img', '#abstract', '#projects', '#petrian', '#kamokamo', '#agri-IoT', '#KanmonGG', '#Gakufubako', '#request', '#grant', '#footnote'],
+    elements: [
+      '#header', 
+      '#cover-img', 
+      '#abstract', 
+      '#projects', 
+      '#petrian', 
+      '#kamokamo', 
+      '#agri-IoT', 
+      '#KanmonGG', 
+      '#Gakufubako', 
+      '#request', 
+      '#grant', 
+      '#footnote'
+    ],
     pixelDepth: false,
     percentage: false,
   });
