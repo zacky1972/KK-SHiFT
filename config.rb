@@ -47,7 +47,7 @@ page '/*.txt', layout: false
 
 helpers do
   def hostUrl link
-    'https://zacky1972.github.io/KK-Shift' + link
+    'https://zacky1972.github.io/KK-SHiFT' + link
   end
 end
 
@@ -72,10 +72,10 @@ configure :build do
   # activate :minify_javascript
   # リポジトリ名を host に設定しておく
   # こうすることで stylesheet_link_tag などで展開されるパスが
-  # https://zacky1972.github.io/KK-Shift/stylesheets/*.css
+  # https://zacky1972.github.io/KK-SHiFT/stylesheets/*.css
   # のようになる
   activate :asset_hash
-  activate :asset_host, :host => 'https://zacky1972.github.io/KK-Shift'
+  activate :asset_host, :host => 'https://zacky1972.github.io/KK-SHiFT'
 end
 
 # デプロイの設定

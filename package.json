@@ -1,7 +1,7 @@
 {
   "name": "kk-shift",
   "version": "1.0.0",
-  "description": "for KK-Shift",
+  "description": "for KK-SHiFT",
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
