@@ -6199,9 +6199,16 @@ body {
 .navbar-brand h1 {
   margin: 0 30px; }
 
+#presentation iframe {
+  width: 600px;
+  height: 450px; }
+
 @media (max-width: 767px) {
   .navbar-brand h1 {
-    margin: 0; } }
+    margin: 0; }
+  #presentation iframe {
+    width: 300px;
+    height: 225px; } }
 
 #cover-img {
   background-color: #4BBDAB;
@@ -6214,7 +6221,7 @@ body {
 div#abstract {
   margin: 40px 0; }
 
-#abstract h1, #projects h1, #request h1 {
+#abstract h1, #presentation h1, #projects h1, #request h1 {
   text-align: center; }
 
 #projects h1, .container #request, .container #grant {
