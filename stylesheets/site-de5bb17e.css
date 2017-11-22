@@ -6200,8 +6200,8 @@ body {
   margin: 0 30px; }
 
 #presentation iframe {
-  width: 600px;
-  height: 450px; }
+  width: 500px;
+  height: 375px; }
 
 @media (max-width: 767px) {
   .navbar-brand h1 {
