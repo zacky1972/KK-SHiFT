@@ -33,9 +33,19 @@ body {
 	}
 }
 
+#presentation iframe {
+	width: 600px;
+	height: 450px;
+}
+
 @include media-breakpoint-down(sm) {
 	.navbar-brand h1 {
 		margin: 0;
+	}
+
+	#presentation iframe {
+		width: 300px;
+		height: 225px;
 	}
 }
 
@@ -54,7 +64,7 @@ div#abstract {
 	margin: 40px 0;
 }
 
-#abstract h1, #projects h1, #request h1 {
+#abstract h1, #presentation h1, #projects h1, #request h1 {
 	text-align: center;
 }
 
